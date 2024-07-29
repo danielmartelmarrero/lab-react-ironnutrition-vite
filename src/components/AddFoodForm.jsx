@@ -19,7 +19,7 @@ function AddFoodForm(props) {
             servings: servings
         }  
 
-        props.setFoods([newFood, [...props.foods]])
+        props.setFoods([newFood, ...props.foods])
 
         setFood("")
         setImage("")
@@ -31,7 +31,7 @@ function AddFoodForm(props) {
             <form onSubmit={handleSubmit}>
                 <label>
                     Name
-                    <input value={food} type="text" onChange={(e)=>{setFood(e.target.value)}}/>
+                    <input value={food} type="text" onChange={(e)=>{setFood(e.target.value)}}/> 
                 </label>
                 <label>
                     Image
